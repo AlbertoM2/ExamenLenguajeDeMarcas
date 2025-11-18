@@ -174,10 +174,34 @@ body {
 .testimonial img{width:80px;height:80px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 10px}
 .testimonial p{font-size:14px}
 
-.extras{background:transparent;padding:30px}
-.ratings{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.rating-box{width:280px;border-radius:20px;margin:10px;padding:10px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.05);background:#fff}
-.rating-box img{width:60px;height:60px;border-radius:50%;object-fit:cover;display:block;margin:8px auto}
+.extras{background:transparent;padding:30px ;text-align:center}
+.ratings{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:16px;
+}
+.rating-box{
+    width:60%;
+    max-width:640px;
+    border-radius:20px;
+    margin:8px 0;
+    padding:14px;
+    text-align:left; /* texto más natural, alineado a la izquierda dentro del recuadro */
+    box-shadow:0 2px 6px rgba(0,0,0,0.06);
+    background:#fff;
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+}
+.rating-box img{
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    object-fit:cover;
+    flex:0 0 64px;
+}
+.rating-box p{font-size:14px;margin:0;line-height:1.45}
 .rating-box p{font-size:14px;margin:6px 8px}
 
 .footer{background:var(--neutral-1);padding:30px;overflow:hidden;clear:both}
